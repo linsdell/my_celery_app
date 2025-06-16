@@ -12,6 +12,8 @@ services:
           name: celery-redis
           type: redis
           property: connectionString
+      - key: PYTHON_VERSION
+        value: "3.10.11"
   - type: web
     name: app
     region: ohio
@@ -25,6 +27,8 @@ services:
           name: celery-redis
           type: redis
           property: connectionString
+      - key: PYTHON_VERSION
+        value: "3.10.11"
   - type: web
     name: flower
     region: ohio
@@ -39,6 +43,8 @@ services:
           type: redis
           name: celery-redis
           property: connectionString
+      - key: PYTHON_VERSION
+        value: "3.10.11"
   - type: redis
     name: celery-redis
     region: ohio
